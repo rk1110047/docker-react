@@ -1,0 +1,13 @@
+
+services :
+  react-app:
+    build :
+      context : .
+      dockerfile : Dockerfile
+    ports:
+      - "4000:3000"
+    volumes :
+      - /opt/docker-rnd/react-docker-conf/node_modules
+      - .:/opt/docker-rnd/react-docker-conf
+  redis-img :
+    image : redis
