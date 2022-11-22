@@ -3,7 +3,7 @@ WORKDIR /opt/docker-rnd/react-docker-conf
 COPY ./package.json .
 COPY . .
 RUN npm install
-RUN npm run start
+CMD ["npm,"run","start"]
 #RUN npm run build
 
 
